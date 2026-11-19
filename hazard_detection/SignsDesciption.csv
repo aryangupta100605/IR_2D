@@ -1,0 +1,79 @@
+Prefix;Description;Prefix;Description;Prefix;Description;Prefix;Description;Prefix;Description
+E001;Emergency exit (left hand);F001;Fire extinguisher;M001;General mandatory action sign;P001;General prohibition sign;W001;General warning sign
+E002;Emergency exit (right hand);F002;Fire hose reel;M002;Refer to instruction manual/booklet;P002;No smoking;W002;Explosive materials
+E003;First aid;F003;Fire ladder;M003;Wear ear protection;P003;No open flame;W003;Radioactive material or ionizing radiation
+E004;Emergency telephone;F004;Collection of firefighting equipment;M004;Wear eye protection;P004;No thoroughfare;W004;Laser beam
+E007;Evacuation assembly point;F005;Fire alarm call point;M005;Connect an earth terminal to the ground;P005;Not drinking water;W005;Non-ionizing radiation
+E008;Break to obtain access;F006;Fire emergency telephone;M006;Disconnect mains plug from electrical outlet;P006;No access for forklift trucks and industrial vehicles;W006;Magnetic field
+E009;Doctor;F007;Fire protection door;M007;Opaque eye protection must be worn;P007;No access for people with active implanted cardiac devices;W007;Floor-level obstacle
+E010;Automated external heart defibrillator;F008;Fixed fire extinguishing battery;M008;Wear foot protection;P008;No metallic articles or watches;W008;Drop or fall hazard
+E011;Eyewash station;F009;Wheeled fire extinguisher;M009;Wear protective gloves;P009;No climbing;W009;Biological hazard
+E012;Safety shower;F010;Portable foam applicator unit;M010;Wear protective clothing;P010;Do not touch;W010;Low temperature hazard
+E013;Stretcher;F011;Water fog applicator;M011;Wash your hands;P011;Do not extinguish with water;W011;Slippery surface
+E014;Child seat presence and orientation detection system (CPOD);F012;Fixed fire extinguishing installation;M012;Use handrail;P012;No heavy load;W012;Electricity hazard
+E015;Drinking water;F013;Fixed fire extinguishing bottle;M013;Wear a face shield;P013;No activated mobile phone;W013;Guard dog
+E016;Emergency window with escape ladder;F014;Remote release station;M014;Wear head protection;P014;No access for people with metallic implants;W014;Forklift truck and other industrial vehicles
+E017;Rescue window;F015;Fire monitor;M015;Wear high visibility clothing;P015;No reaching in;W015;Overhead or suspended load
+E018;Turn anticlockwise (counterclockwise) to open;F016;Fire blanket;M016;Wear a mask;P016;Do not spray with water;W016;Toxic material
+E019;Turn clockwise to open;F017;Firefighters' lift;M017;Wear respiratory protection;P017;No pushing;W017;Hot surface
+E020;Emergency stop button;F018;Fire alarm flashing light;M018;Wear a safety harness;P018;No sitting;W018;Automatic start-up
+E021;Protection shelter;F019;Unconnected fire hose;M019;Wear a welding mask;P019;No stepping on surface;W019;Crushing by moving parts
+E022;Door opens by pushing on the left-hand side;;;M020;Wear safety belts;P020;Do not use lift in the event of fire;W020;Overhead obstacle
+E023;Door opens by pushing on the right-hand side;;;M021;Disconnect before carrying out maintenance or repair;P021;No dogs;W021;Flammable material
+E024;Evacuation temporary refuge;;;M022;Use barrier cream;P022;No eating or drinking;W022;Sharp element
+E025;Emergency hammer;;;M023;Use footbridge;P023;Do not obstruct;W023;Corrosive substance
+E026;Emergency exit for people unable to walk or with walking impairment (left);;;M024;use this walkway;P024;Do not walk or stand here;W024;Crushing of hands
+E027;Medical grab bag;;;M025;Protect infants' eyes with opaque eye protection;P025;Do not use this incomplete scaffold;W025;Counter-rotating rollers
+E028;Oxygen resuscitator;;;M026;Use protective apron;P026;Do not use this device in a bathtub, shower or water-filled reservoir;W026;Battery charging
+E029;Emergency escape breathing device;;;M027;install or check guard;P027;Do not use this lift for people;W027;Optical radiation
+E030;Emergency exit for people unable to walk or with walking impairment (right);;;M028;install locks and keep locked;P028;Do not wear gloves;W028;Oxidizing substance
+E031;Shipboard general alarm;;;M029;sound your horn;P029;No photography;W029;Pressurized cylinder
+E032;Shipboard assembly station;;;M030;place trash in the bin;P030;Do not tie knots in rope;W030;Hand Injury in Press
+E033;Door slides right to open;;;M031;use guard to protect from injury from the table saw;P031;Do not alter the state of the switch;W031;Hand injury from rapid movement of workpiece in press brake machine
+E034;Door slides left to open;;;M032;use footwear with anti-static or anti-spark features;P032;Do not use for face grinding;W032;rapid movement of workpiece in press brake machine
+E035;Liferaft knife;;;M033;lower safety restraining bar on ski chairlift;P033;Do not use for wet grinding;W033;barbed wire
+E036;Lifeboat;;;M034;raise safety restraining bar on ski chairlift;P034;Do not use with hand-held grinder;W034;bull
+E037;Rescue boat;;;M035;exit towpath after falling;P035;Do not wear metal-studded footwear;W035;Falling Parts
+E038;Liferaft;;;M036;keep ski tips up;P036;No children allowed;W036;fragile roof
+E039;Davit-launched liferaft;;;M037;close and secure the hatch (lifeboat launch sequence);P037;Do not leave the tow-track;W037;injury from automated or remote-controlled vehicles
+E040;Lifebuoy;;;M038;start the motor (lifeboat launch sequence);P038;Do not swing the chair;W038;sudden loud noises
+E041;Lifebuoy with line;;;M039;lower the lifeboat to the water (lifeboat launch sequence);P039;Hot works prohibited;W039;Falling Ice Spikes
+E042;Lifebuoy with light;;;M040;lower the lifeboat to the water (lifeboat launch sequence);P040;Do not set off fireworks;W040;roof avalanche
+E043;Lifebuoy with line and light;;;M041;lower the rescue boat to the water (lifeboat launch sequence);P041;No leaning against;W041;breathing hazard
+E044;Lifejacket;;;M042;release the hooks holding the lifeboat (lifeboat launch sequence);P042;Not for pregnant women;W042;arc flash hazard
+E045;Child's lifejacket;;;M043;start the water spray for the lifeboat (lifeboat launch sequence);P043;Not for people in the state of intoxication;W043;thin ice
+E046;Infant's lifejacket;;;M044;start the air supply for the lifeboat (lifeboat launch sequence);P044;Use of smart glasses prohibited;W044;slipway
+E047;Search and rescue transponder;;;M045;release the ropes (gripes) (lifeboat launch sequence);P045;No campfire;W045;water skiing or towed water activity area
+E048;Survival craft distress signals;;;M046;secure gas cylinders;P046;Do not stretch out of toboggan;W046;surfing
+E049;Rocket parachute flare;;;M047;use breathing equipment (SCBA);P047;Do not ram into toboggans;W047;deep water
+E050;Line-throwing appliance;;;M048;use gas detector;P048;No running;W048;shallow water
+E051;Two-way VHF radiotelephone apparatus;;;M049;use personal protective equipment for sport;P049;No swimming;W049;submerged objects
+E052;mergency position indicating radio beacon;;;M050;exit sled-toboggan to the left;P050;No snorkelling;W050;sudden drop in swimming pool
+E053;Embarkation ladder;;;M051;exit sled-toboggan to the right;P051;No sub-aqua diving;W051;no guard rail and unprotected edges
+E054;Marine evacuation slide;;;M052;keep a safe distance between sleds (toboggans);P052;No diving;W052;unstable cliff edge
+E055;Marine evacuation chute;;;M053;wear personal floatation device (PFD) (lifejacket);P053;No sailing;W053;unstable cliff
+E056;Survival clothing;;;M054;supervise children during aquatic activities;P054;No windsurfing;W054;sharks
+E057;Door opens by pulling on the left-hand side;;;M055;Keep out of the reach of children[10][11];P055;No manually powered craft;W055;sewage effluent outfall
+E058;Door opens by pulling on the right-hand side;;;M056;Ventilate before and during entering;P056;No mechanically powered craft;W056;tsunami hazard zone
+E059;Escape Ladder;;;M057;Ensure continuous ventilation;P057;No personal water craft;W057;strong currents
+E060;Evacuation chair;;;M058;Entry only with supervisor outside;P058;No towed water activity;W058;boating area
+E061;Water life-saving equipment;;;M059;Wear laboratory coat;P059;No surf craft;W059;"wheeled beach vehicles; land surfing; sand yachting; wind carts"
+E062;Tsunami evacuation area;;;M060;Hold the trolley handle;P060;No outdoor footwear;W060;incoming tides
+E063;Tsunami evacuation building;;;;;P061;No jumping into water;W061;quicksand, mud, deep mud, or silt
+E064;First aid responder;;;;;P062;No pushing into water;W062;kite surfing
+E065;Natural disaster outdoor refuge area;;;;;P063;No body boarding;W063;parasailing
+E067;Evacuation mattress;;;;;P064;No surfing between the red-and-yellow flags;W064;strong winds
+E068;Lifebuoy with light and smoke;;;;;P065;No kite surfing;W065;high surf or large breaking waves
+E069;Person overboard call point;;;;;P066;No parasailing;W066;Sudden drop to deep water
+E070;Evacuation lift for people unable to use stairs;;;;;P067;No sand yachting;W067;alligators, caymans and crocodiles
+;;;;;;P068;Do not expose to direct sunlight or hot surface;W068;Falling into water when stepping on or off a floating surface
+;;;;;;P069;ot to be serviced by users;W069;Jellyfish
+;;;;;;P070;Do not put finger into the nozzle of a hydromassage;W070;Step down
+;;;;;;P071;Do not cross barrier;W071;Substance or mixture presenting a health hazard
+;;;;;;P072;No jumping down;W072;Substance or mixture that can cause an environmental hazard
+;;;;;;P073;Do not shut lid when burners are operating;W073;Large-scale fire zone
+;;;;;;P074;Child seat installation prohibited;W074;Tornado zone
+;;;;;;;;W075;Active volcano zone
+;;;;;;;;W076;Debris flow zone
+;;;;;;;;W077;Flood zone
+;;;;;;;;W078;Landslide zone

@@ -1,0 +1,17 @@
+Number; Description
+1;Image rotation 45 degrees
+2;Image rotation 90 degrees
+3;Image rotation 135 degrees
+4;Image rotation 180 degrees
+5;Image rotation 225 degrees
+6;Image rotation 270 degrees
+7;Brightness increase 2
+8;Brightness increase 4
+9;Decrease contrast by 50%.
+10;Decrease contrast by 90%.
+11;Image resizing
+12;Highlight relief
+13;Crop
+14;Mirror image
+15;Color to black and white
+16;Image Spread

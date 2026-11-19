@@ -1,0 +1,9 @@
+path: C:/Users/142zi/.copilot/chats/d63f1554-b8cd-4539-a074-6f93e6184185/ros2_yolo_obstacle_detector/hazard_training/dataset
+train: images/train
+val: images/val
+names:
+  0: high_voltage
+  1: radioactive
+  2: chemical
+  3: biological
+  4: flammable
