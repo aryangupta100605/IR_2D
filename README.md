@@ -20,7 +20,7 @@ ros2 run yolo_obstacle_detector detector_node
 
 The default topics are:
 
-- Input: `/camerafeedback` (`sensor_msgs/msg/Image`)
+- Input: `/camera/color/image_raw` (`sensor_msgs/msg/Image`)
 - Output: `/obstacles/detections` (`vision_msgs/msg/Detection2DArray`)
 
 The default model is `yolo26n.pt`. Ultralytics downloads it on first use when
@@ -30,7 +30,7 @@ the machine has network access, or it can be replaced with a local path.
 
 ```bash
 ros2 run yolo_obstacle_detector detector_node --ros-args \
-  -p camera_topic:=/camera/image_raw \
+  -p camera_topic:=/camera/color/image_raw \
   -p model:=/models/yolo26n.pt \
   -p confidence:=0.40 \
   -p device:=cuda:0
@@ -129,7 +129,7 @@ colcon build --symlink-install --packages-select yolo_obstacle_detector
 source install/setup.bash
 ```
 
-The node expects camera images on `/camera/image_raw`. Start the camera or
+The node expects the dog's camera images on `/camera/color/image_raw`. Start the camera or
 another ROS 2 node that publishes that topic, then run the visualizer in a new
 sourced terminal:
 
@@ -144,14 +144,14 @@ To print only a particular object count, such as the number of people, use
 
 ```bash
 ros2 run yolo_obstacle_detector detector_visualizer_node --ros-args \
-  -p camera_topic:=/camera/image_raw \
+  -p camera_topic:=/camera/color/image_raw \
   -p model:=/home/$USER/ros2_ws/src/yolo_obstacle_detector/yolo11n.pt \
   -p object_of_interest:=person \
   -p confidence:=0.35
 ```
 
 If the camera publishes another topic, find image topics with
-`ros2 topic list` and replace `/camera/image_raw` in the command. Press `q` or
+`ros2 topic list` and replace `/camera/color/image_raw` in the command. Press `q` or
 `Esc` in the preview window to stop the test.
 
 ## Webcam test
@@ -163,12 +163,13 @@ camera topic:
 ros2 run yolo_obstacle_detector webcam_test_node
 ```
 
-The default webcam device is `0` and the default topic is `/camerafeedback`.
+The default webcam device is `0`. For testing against the dog's camera, use
+`/camera/color/image_raw` as the topic.
 For another webcam or topic:
 
 ```bash
 ros2 run yolo_obstacle_detector webcam_test_node --ros-args \
-  -p device:=1 -p topic:=/camera/image_raw -p fps:=10
+  -p device:=1 -p topic:=/camera/color/image_raw -p fps:=10
 ```
 
 Run the webcam publisher and detector nodes in separate sourced terminals.
@@ -179,13 +180,13 @@ ros2 topic pub --once /navigation std_msgs/msg/String "{data: test_scan}"
 ```
 
 For a direct visual detector test using the webcam, publish the webcam on
-`/camera/image_raw` and run this node in separate sourced terminals:
+`/camera/color/image_raw` and run this node in separate sourced terminals:
 
 ```bash
 ros2 run yolo_obstacle_detector webcam_test_node --ros-args \
-  -p topic:=/camera/image_raw
+  -p topic:=/camera/color/image_raw
 ros2 run yolo_obstacle_detector detector_visualizer_node --ros-args \
-  -p camera_topic:=/camera/image_raw \
+  -p camera_topic:=/camera/color/image_raw \
   -p object_of_interest:=person
 ```
 
