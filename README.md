@@ -108,6 +108,52 @@ ros2 run yolo_obstacle_detector overseer_node --ros-args \
   -p human_device:=cpu
 ```
 
+## ROS 2 local YOLO camera visualizer test
+
+This test runs the local `detector_visualizer_node` only. It does not query GPT
+or any perception server. It subscribes to `sensor_msgs/msg/Image`, opens an
+annotated OpenCV window, draws a box around each YOLO detection, and prints
+object counts in the terminal.
+
+On a machine with ROS 2 installed, download the repository into a ROS 2
+workspace and build it:
+
+```bash
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+git clone --branch integration https://github.com/aryangupta100605/IR_2D.git yolo_obstacle_detector
+cd ~/ros2_ws
+rosdep install --from-paths src --ignore-src -r -y
+python3 -m pip install -r src/yolo_obstacle_detector/requirements.txt
+colcon build --symlink-install --packages-select yolo_obstacle_detector
+source install/setup.bash
+```
+
+The node expects camera images on `/camera/image_raw`. Start the camera or
+another ROS 2 node that publishes that topic, then run the visualizer in a new
+sourced terminal:
+
+```bash
+cd ~/ros2_ws
+source install/setup.bash
+ros2 run yolo_obstacle_detector detector_visualizer_node
+```
+
+To print only a particular object count, such as the number of people, use
+`object_of_interest`. Leave it empty to print counts for every detected class:
+
+```bash
+ros2 run yolo_obstacle_detector detector_visualizer_node --ros-args \
+  -p camera_topic:=/camera/image_raw \
+  -p model:=/home/$USER/ros2_ws/src/yolo_obstacle_detector/yolo11n.pt \
+  -p object_of_interest:=person \
+  -p confidence:=0.35
+```
+
+If the camera publishes another topic, find image topics with
+`ros2 topic list` and replace `/camera/image_raw` in the command. Press `q` or
+`Esc` in the preview window to stop the test.
+
 ## Webcam test
 
 Before connecting the robot camera, publish a local webcam on the default
@@ -132,18 +178,20 @@ To trigger the coordinator's room scan:
 ros2 topic pub --once /navigation std_msgs/msg/String "{data: test_scan}"
 ```
 
-For a direct visual detector test that draws both types of boxes on the webcam
-image, run the webcam publisher and this node in separate sourced terminals:
+For a direct visual detector test using the webcam, publish the webcam on
+`/camera/image_raw` and run this node in separate sourced terminals:
 
 ```bash
-ros2 run yolo_obstacle_detector webcam_test_node
+ros2 run yolo_obstacle_detector webcam_test_node --ros-args \
+  -p topic:=/camera/image_raw
 ros2 run yolo_obstacle_detector detector_visualizer_node --ros-args \
-  -p model:=hazard_training/dataset/runs/hazard_yolo/weights/best.pt
+  -p camera_topic:=/camera/image_raw \
+  -p object_of_interest:=person
 ```
 
-Hazard boxes are red and QR boxes are green. Press `q` or `Esc` in the preview
-window to stop the visualizer. The visualizer uses `/camerafeedback` by default;
-override it with `-p camera_topic:=/camera/image_raw` when using another topic.
+YOLO boxes are drawn in blue and QR boxes are drawn in green. The terminal
+prints messages such as `Detected object count: person=2`. Press `q` or `Esc`
+in the preview window to stop the visualizer.
 
 ROS 2 does not require a central server. The processes only need the same ROS
 2 installation, sourced environment, and `ROS_DOMAIN_ID`.
